@@ -1,0 +1,20 @@
+{
+  "products": [{
+    "name": "samsung tv",
+    "price": 1500,
+    "image": "http://www.sbctradingco.com/bigpic/269/20150714195747.jpg",
+    "description": "curved 4k tv"
+  },
+  {
+    "name": "google pixel xl",
+    "price": 770,
+    "image": "http://cdn2.gsmarena.com/vv/pics/google/google-pixel-xl-4.jpg",
+    "description": "google smartphone"
+  },
+  {
+    "name": "extreme 3d pro joystick",
+    "price": 39.99,
+    "image": "http://www.sbctradingco.com/bigpic/269/20150714195747.jpg",
+    "description": "logitech gaming joystick"
+  }]
+}
