@@ -1,5 +1,50 @@
-<p>
-  product-list works!
-</p>
 
-<product *ngFor="let item of products"></product>
+<md-sidenav-container >
+        <!-- <side-nav #sidenav>
+        </side-nav> -->
+
+        <md-sidenav mode="over"  align="end" #sidenav >
+            <md-tab-group>
+              <md-tab>
+                <template md-tab-label>Details</template>
+                <product-details>
+                </product-details>
+              </md-tab>
+              <md-tab>
+                <template md-tab-label>Edit</template>
+                <product-details-edit>
+                </product-details-edit>
+              </md-tab>
+            </md-tab-group>
+            <button md-raised-button (click)="sidenav.close()" color="primary">Close</button>
+            
+          </md-sidenav>
+
+
+          
+<!-- rowHeight="100px" -->
+
+<md-grid-list cols="4" rowHeight="200px" gutterSize="5px">
+    <md-grid-tile 
+        *ngFor="let product of products"
+        [style.padding] = "0"
+        [colspan]="1"
+        [rowspan]="1"
+        >
+        <!-- <img src="{{productItem.image}}"> -->
+        <img  src="{{product.image}}" class="product-image">
+        <!-- {{productItem.image}} -->
+        <!-- <product [productItem] = product></product> -->
+        <md-grid-tile-footer>
+          <h3 md-line>{{product.name}}</h3>
+          <span md-line>price: {{product.price}}</span>
+          <button md-icon-button (click)="productDetails(product)">
+              <md-icon>info</md-icon>
+          </button>
+          
+        </md-grid-tile-footer>
+    </md-grid-tile>
+  </md-grid-list>
+
+
+</md-sidenav-container>

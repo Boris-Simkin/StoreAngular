@@ -1,0 +1,33 @@
+md-grid-list {
+    max-width: 70%;
+    min-height: 100vh;
+    margin: 16px;
+    /*  */
+}
+.product-image {
+    height: 100%;
+}
+
+md-sidenav-container {
+    /* position: fixed;
+    width: 100%;
+    overflow-y: auto; */
+
+
+    /* height: 100%;
+    min-height: 100%;
+    width: 100%;
+    min-width: 100%; */
+
+    /* overflow-y: hidden;
+    border: solid; */
+}
+
+[md-raised-button] {
+    width: 100%;
+} 
+
+md-sidenav{
+    /* width: 100px; */
+    max-width: 20%;
+}

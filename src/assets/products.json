@@ -1,20 +1,65 @@
 {
   "products": [{
+    "id": 1,
     "name": "samsung tv",
     "price": 1500,
     "image": "http://www.sbctradingco.com/bigpic/269/20150714195747.jpg",
     "description": "curved 4k tv"
   },
   {
+    "id": 2,
     "name": "google pixel xl",
     "price": 770,
     "image": "http://cdn2.gsmarena.com/vv/pics/google/google-pixel-xl-4.jpg",
     "description": "google smartphone"
   },
   {
+    "id": 3,
     "name": "extreme 3d pro joystick",
     "price": 39.99,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/414X2Z0A7TL._SL500_AC_SS350_.jpg",
+    "description": "logitech gaming joystick"
+  },
+  {
+    "id": 4,
+    "name": "samsung tv",
+    "price": 1500,
     "image": "http://www.sbctradingco.com/bigpic/269/20150714195747.jpg",
+    "description": "curved 4k tv"
+  },
+  {
+    "id": 5,
+    "name": "google pixel xl",
+    "price": 770,
+    "image": "http://cdn2.gsmarena.com/vv/pics/google/google-pixel-xl-4.jpg",
+    "description": "google smartphone"
+  },
+  {
+    "id": 6,
+    "name": "extreme 3d pro joystick",
+    "price": 39.99,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/414X2Z0A7TL._SL500_AC_SS350_.jpg",
+    "description": "logitech gaming joystick"
+  },
+  {
+    "id": 7,
+    "name": "samsung tv",
+    "price": 1500,
+    "image": "http://www.sbctradingco.com/bigpic/269/20150714195747.jpg",
+    "description": "curved 4k tv"
+  },
+  {
+    "id": 8,
+    "name": "google pixel xl",
+    "price": 770,
+    "image": "http://cdn2.gsmarena.com/vv/pics/google/google-pixel-xl-4.jpg",
+    "description": "google smartphone"
+  },
+  {
+    "id": 9,
+    "name": "extreme 3d pro joystick",
+    "price": 39.99,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/414X2Z0A7TL._SL500_AC_SS350_.jpg",
     "description": "logitech gaming joystick"
   }]
 }

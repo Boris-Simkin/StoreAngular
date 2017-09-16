@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ProductsService } from '../products.service'; 
+import { IProduct} from '../product';
 
 @Component({
   selector: 'product-list',
@@ -8,11 +9,36 @@ import { ProductsService } from '../products.service';
 })
 export class ProductListComponent implements OnInit {
 
-  constructor(private productsService : ProductsService) { }
+  // tiles = [
+  //   {text: 'One', cols: 3, rows: 1, color: 'lightblue'},
+  //   {text: 'Two', cols: 1, rows: 2, color: 'lightgreen'},
+  //   {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+  //   {text: 'Four', cols: 2, rows: 1, color: '#DDBDF1'},
+  // ];
+
+  products : IProduct[];
+
+  @ViewChild('sidenav') sidenav: any;
+
+  constructor(private productsService : ProductsService) {
+   }
 
   ngOnInit() {
-    this.productsService.fetchProducts().subscribe((data) => console.log(data));
-
+    
+    this.productsService.fetchProducts().subscribe(
+        res => {
+          this.products = res['products'];
+          console.log(this.products[2]);},
+      )
   }
+
+  productDetails() {
+    this.sidenav.open();
+  }
+  
+//   toggle() {
+//     this.sidenav.open();
+// }
+
 
 }
