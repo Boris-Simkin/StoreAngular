@@ -1,6 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ProductsService } from '../products.service'; 
 import { IProduct} from '../product';
+import { PurchaseComponent } from '../purchase-dialog/purchase-dialog.component';
+import { MdDialog, MdDialogRef, MD_DIALOG_DATA } from '@angular/material';
 
 @Component({
   selector: 'product-list',
@@ -9,36 +11,49 @@ import { IProduct} from '../product';
 })
 export class ProductListComponent implements OnInit {
 
-  // tiles = [
-  //   {text: 'One', cols: 3, rows: 1, color: 'lightblue'},
-  //   {text: 'Two', cols: 1, rows: 2, color: 'lightgreen'},
-  //   {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
-  //   {text: 'Four', cols: 2, rows: 1, color: '#DDBDF1'},
-  // ];
-
   products : IProduct[];
 
   @ViewChild('sidenav') sidenav: any;
 
-  constructor(private productsService : ProductsService) {
-   }
+  currentProduct = {};
+
+  //this boolean activatd then a product added to cart
+  fade : boolean = false;
+
+  constructor(private productsService : ProductsService, public dialog: MdDialog) {
+  }
 
   ngOnInit() {
     
-    this.productsService.fetchProducts().subscribe(
-        res => {
-          this.products = res['products'];
-          console.log(this.products[2]);},
-      )
+    // this.products = this.productsService.fetchProducts();
+    setTimeout(this.test(), 3000);
   }
 
-  productDetails() {
+  productDetails(product) {
+    this.currentProduct = product;
     this.sidenav.open();
   }
   
-//   toggle() {
-//     this.sidenav.open();
-// }
+  addToCart(product) {
+    let dialogRef = this.dialog.open(PurchaseComponent, {
+      data: { name: product.name }
+    });
 
+    this.currentProduct = product;
+    this.fade = true;
+    dialogRef.afterClosed().subscribe(result => {
+
+      this.fade = false;
+      this.sidenav.close();
+      this.productsService.removeProduct(product);
+    });
+  }
+
+
+  test() {
+    let t = this.productsService.fetchProducts();
+    console.log(t);
+    this.products = t;
+  }
 
 }

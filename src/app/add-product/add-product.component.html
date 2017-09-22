@@ -1,3 +1,30 @@
-<p>
-  add-product works!
-</p>
+<md-card id="form-card">
+    <form class="product-form" [formGroup]="rForm" (ngSubmit)="onSubmit()">
+        <md-form-field>
+            <input mdInput formControlName="name" placeholder="Product name">
+        </md-form-field>
+        <md-form-field>
+            <input mdInput formControlName="description" placeholder="description">
+        </md-form-field>
+        <md-form-field>
+            <span mdPrefix>$&nbsp;</span>
+            <input type="number" mdInput formControlName="price" placeholder="Price">
+        </md-form-field>
+        <md-form-field>
+            <input mdInput formControlName="image" placeholder="Image">
+        </md-form-field>
+        <md-card-actions>
+          <button *ngIf="rForm.valid" md-raised-button color="primary">Submit</button>
+          <button *ngIf="!rForm.valid" md-raised-button disabled color="primary">Submit</button>
+        </md-card-actions>
+      </form>
+      <div *ngIf="rForm.controls['name'].hasError('required') && rForm.controls['name'].touched" class="alert-message">The product name is required</div>
+      <div *ngIf="rForm.controls['price'].hasError('required') && rForm.controls['price'].touched" class="alert-message">The price is required</div>
+      <div *ngIf="rForm.controls['price'].hasError('negative') && rForm.controls['price'].touched 
+      && !rForm.controls['price'].hasError('required')" class="alert-message">The price must be positive</div>
+  </md-card> 
+
+
+  <img id="preview" width="300" #preview src="{{rForm.value.image}}" onError="this.src='../../assets/preview.png'" >
+    
+  

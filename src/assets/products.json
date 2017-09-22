@@ -22,44 +22,44 @@
   },
   {
     "id": 4,
-    "name": "samsung tv",
-    "price": 1500,
-    "image": "http://www.sbctradingco.com/bigpic/269/20150714195747.jpg",
-    "description": "curved 4k tv"
+    "name": "chrmoecast ultra",
+    "price": 69,
+    "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5578/5578628_sd.jpg",
+    "description": "Stream in up to 4K Ultra HD and HDR with stunning picture and lightning speed"
   },
   {
     "id": 5,
-    "name": "google pixel xl",
-    "price": 770,
-    "image": "http://cdn2.gsmarena.com/vv/pics/google/google-pixel-xl-4.jpg",
-    "description": "google smartphone"
+    "name": "Lemorton 15 Year Old Vieux Calvados",
+    "price": 91.65,
+    "image": "https://cdn2.masterofmalt.com/calvados/p-2813/lemorton/lemorton-15-year-old-vieux-calvados.jpg",
+    "description": " 15 year old expression from excellent Calvados producer, Lemorton, based in Domfront. Great as a refreshing alternative to whisky for your postprandial tipple."
   },
   {
     "id": 6,
-    "name": "extreme 3d pro joystick",
-    "price": 39.99,
-    "image": "https://images-na.ssl-images-amazon.com/images/I/414X2Z0A7TL._SL500_AC_SS350_.jpg",
-    "description": "logitech gaming joystick"
+    "name": "HTC VIVE",
+    "price":  599,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/81gCIwt39%2BL._AC_SL1500_.jpg",
+    "description": "Virtual Reality System"
   },
   {
     "id": 7,
-    "name": "samsung tv",
-    "price": 1500,
-    "image": "http://www.sbctradingco.com/bigpic/269/20150714195747.jpg",
-    "description": "curved 4k tv"
+    "name": "SRH1840 - Professional Open Back Headphones",
+    "price": 499,
+    "image": "https://522bb370f5443d4fe5b9-f62de27af599bb6703e11b472beadbcc.ssl.cf2.rackcdn.com/product/zoomable_image/10811/max_desktop_SRH1840_Straight_OnWhite_HR.jpg",
+    "description": "Professional Open Back Headphones feature individually matched drivers for unparalleled acoustic performance, including smooth, extended highs and accurate bass."
   },
   {
     "id": 8,
-    "name": "google pixel xl",
-    "price": 770,
-    "image": "http://cdn2.gsmarena.com/vv/pics/google/google-pixel-xl-4.jpg",
-    "description": "google smartphone"
+    "name": "Ray-Ban Aviator Classic Gold",
+    "price": 153,
+    "image": "https://assets.ray-ban.com//is/image/RayBan/805289602057_shad_al2?$594$",
+    "description": "sunglasses are a timeless model that combines great aviator styling with exceptional quality, performance and comfort. "
   },
   {
     "id": 9,
-    "name": "extreme 3d pro joystick",
-    "price": 39.99,
-    "image": "https://images-na.ssl-images-amazon.com/images/I/414X2Z0A7TL._SL500_AC_SS350_.jpg",
-    "description": "logitech gaming joystick"
+    "name": "La Pavoni ESW-8 Espresso Machine",
+    "price": 1129.35,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/61Sb%2B-7Y2TL._SL1200_.jpg",
+    "description": "The La Pavoni Stradavari eight cup in chrome with wood handles features a 20 oz. boiler, and internal thermostat. This lever model includes nickel plated non-corrosive brass boilers, recessed power switch, dual frothing cappuccino systems, and a reset safety fuse. Includes a 1-year warranty."
   }]
 }

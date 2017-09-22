@@ -1,4 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ProductsService } from '../products.service'; 
+import { MdSnackBar } from '@angular/material';
+
+import { NgForm, FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
+import { IProduct} from '../product';
+import { CustomValidation } from '../custom-validation';
 
 @Component({
   selector: 'app-add-product',
@@ -7,9 +13,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddProductComponent implements OnInit {
 
-  constructor() { }
+  rForm : FormGroup;
+  product : IProduct;
+
+  constructor(private fb: FormBuilder, private productsService : ProductsService, public snackBar: MdSnackBar) { 
+    this.rForm = fb.group({
+      name: [null, Validators.required],
+      price: [null, Validators.compose([Validators.required, CustomValidation.negative])],
+      image: '',
+      description: '',
+    });
+  }
 
   ngOnInit() {
   }
+
+  onSubmit() {
+    this.product = this.rForm.value;
+    this.productsService.addProduct(this.product);
+    this.rForm.reset();
+    this.snackBar.open('Product created', null, {
+      duration: 2000
+    });
+  }
+
+  @ViewChild('preview') preview: any;
+
 
 }

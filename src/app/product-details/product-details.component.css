@@ -1,0 +1,22 @@
+[md-raised-button] {
+    width: 40%;
+    margin-top: 10px;
+    margin-right: 5px;
+} 
+
+ img{
+     width: 100%;
+ }
+
+ #image-container{
+    height: 16em;
+ }
+
+ #content{
+     margin-left: 4px;
+     height: calc(100vh - 149px);
+ }
+
+ #price {
+     font-weight: bolder;
+ }

@@ -1,0 +1,11 @@
+#form-card{
+    width: 250px;
+    display: inline-block; 
+}
+#preview{
+    margin-left: 100px;
+    /* width: 300px;
+    margin-left: 100px; */
+    /* display: inline-block;  */
+    /* border: solid; */
+}

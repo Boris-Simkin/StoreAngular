@@ -1,0 +1,11 @@
+span {
+    font-size: 200%;
+    background-color: green;
+    color: white;   
+    border-radius: 50%;
+    vertical-align: bottom;
+}
+
+#dialog{
+    width: 100%;
+}

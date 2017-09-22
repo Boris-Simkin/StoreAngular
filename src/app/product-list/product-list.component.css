@@ -1,33 +1,30 @@
 md-grid-list {
-    max-width: 70%;
-    min-height: 100vh;
+    width: 130vh;
+    height: 100vh;
     margin: 16px;
-    /*  */
 }
 .product-image {
     height: 100%;
+    transition: transform 0.3s;
 }
-
-md-sidenav-container {
-    /* position: fixed;
-    width: 100%;
-    overflow-y: auto; */
-
-
-    /* height: 100%;
-    min-height: 100%;
-    width: 100%;
-    min-width: 100%; */
-
-    /* overflow-y: hidden;
-    border: solid; */
-}
-
-[md-raised-button] {
-    width: 100%;
-} 
+.product-image:hover {
+     transform:scale(1.2,1.2);
+ }
 
 md-sidenav{
-    /* width: 100px; */
-    max-width: 20%;
+    width: 340px; 
+    overflow: hidden;
+}
+
+#products-container {
+    height: 85vh;
+}
+
+md-grid-tile{
+    transition: all 0.8s;
+    opacity: 1;
+}
+
+.fade {
+    opacity: 0;
 }

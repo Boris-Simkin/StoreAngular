@@ -1,3 +1,8 @@
-<p>
-  product-details works!
-</p>
+<perfect-scrollbar id="content" [config]="config">
+  <h3>{{product.name | capitalize}}</h3>
+      <img src="{{product.image}}" alt="Product image" >
+      <p>{{product.description | capitalize}}</p>
+      <div id="price">Price: {{product.price | dollars }}</div>
+      <button md-raised-button (click)="onAddToCart()" color="primary">Add to card</button>
+      <button md-raised-button (click)="closeNav()" color="primary">Close</button>
+</perfect-scrollbar>
