@@ -8,10 +8,6 @@ import { ProductsService } from './products.service';
 })
 export class AppComponent {
   title = 'app';
-
-  constructor(private productsService : ProductsService) {
-    productsService.subscribeToProducts();
-  }
 }
 
 

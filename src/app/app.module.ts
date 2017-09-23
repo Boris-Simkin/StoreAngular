@@ -47,7 +47,7 @@ const PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     ReactiveFormsModule,
     PerfectScrollbarModule.forRoot(PERFECT_SCROLLBAR_CONFIG),
     RouterModule.forRoot([
-    // { path: '', redirectTo: '/products', pathMatch: 'full' },
+    { path: '', redirectTo: '/products', pathMatch: 'full' },
     { path: 'products', component: ProductListComponent},
     { path: 'add_product', component: AddProductComponent},  
     { path: 'about', component: AboutComponent}])

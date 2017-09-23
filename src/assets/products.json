@@ -1,5 +1,4 @@
-{
-  "products": [{
+ [{
     "id": 1,
     "name": "samsung tv",
     "price": 1500,
@@ -62,4 +61,3 @@
     "image": "https://images-na.ssl-images-amazon.com/images/I/61Sb%2B-7Y2TL._SL1200_.jpg",
     "description": "The La Pavoni Stradavari eight cup in chrome with wood handles features a 20 oz. boiler, and internal thermostat. This lever model includes nickel plated non-corrosive brass boilers, recessed power switch, dual frothing cappuccino systems, and a reset safety fuse. Includes a 1-year warranty."
   }]
-}

@@ -24,9 +24,17 @@ export class ProductListComponent implements OnInit {
   }
 
   ngOnInit() {
-    
-    // this.products = this.productsService.fetchProducts();
-    setTimeout(this.test(), 3000);
+    this.productsService.fetchProducts().subscribe(res => {
+        //Subscribe the service itself to products from
+        //a file if its not subscribe yet
+        if (!this.productsService.products)
+          this.productsService.products = res;
+      }, 
+      err => console.log(err), 
+      //Callback function - when service got the products
+      //subscribe to the service products
+      () => this.products = this.productsService.products
+    );
   }
 
   productDetails(product) {
@@ -47,13 +55,6 @@ export class ProductListComponent implements OnInit {
       this.sidenav.close();
       this.productsService.removeProduct(product);
     });
-  }
-
-
-  test() {
-    let t = this.productsService.fetchProducts();
-    console.log(t);
-    this.products = t;
   }
 
 }
