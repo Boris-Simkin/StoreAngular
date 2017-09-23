@@ -2,13 +2,13 @@
         <md-sidenav mode="side"  align="end" #sidenav >
             <md-tab-group>
               <md-tab>
-                <template md-tab-label>Details</template>
+                <ng-template md-tab-label>Details</ng-template>
                 <product-details [product]="currentProduct" 
                 (close)="sidenav.close()" (addToCart)="addToCart(currentProduct)">
                 </product-details>
               </md-tab>
               <md-tab>
-                <template md-tab-label>Edit</template>
+                <ng-template md-tab-label>Edit</ng-template>
                 <product-details-edit [product]="currentProduct" [products]="products" (close)="sidenav.close()">
                 </product-details-edit>
               </md-tab>
